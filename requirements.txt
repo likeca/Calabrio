@@ -1,0 +1,5 @@
+boto3==1.38.38
+logging==0.4.9.6
+aws-cdk-lib==2.201.0
+pytest==8.4.1 
+requests==2.32.4
