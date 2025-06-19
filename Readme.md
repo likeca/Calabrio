@@ -1,18 +1,19 @@
 # Calabrio
+```
 Implement a serverless solution (Python script) to process and store messages.  
 This implementation should be python script with aws_cdk package only.  
 
 Requirements:  
     - Create an AWS Lambda function (with aws_cdk, specifically DockerImageFunction):  
-        - The Lambda function should accept an input event containing a message, for example:  
-        {. 
-            "messageUUID": "05ceddd6-67e2-429a-a9c3-ea3edf6dbc7e",  
-            "messageText": "placeholder message",  
-            "messageDatetime": "YYYY-MM-DD HH:MM:SS". 
-        }. 
-        - Validate the messageText is a string and meets basic conditions (e.g., length between 10 and 100 characters).  
-        - Save the validated message to an Amazon DynamoDB table (mentioned below).  
-        - An API Gateway to invoke the Lambda function.  
+    - The Lambda function should accept an input event containing a message, for example:  
+      { 
+          "messageUUID": "05ceddd6-67e2-429a-a9c3-ea3edf6dbc7e",  
+          "messageText": "placeholder message",  
+          "messageDatetime": "YYYY-MM-DD HH:MM:SS". 
+      } 
+    - Validate the messageText is a string and meets basic conditions (e.g., length between 10 and 100 characters).  
+    - Save the validated message to an Amazon DynamoDB table (mentioned below).  
+    - An API Gateway to invoke the Lambda function.  
     - Create a DynamoDB table with necessary partition key and indexes.  
 
 Bonus (Optional):  
@@ -24,7 +25,7 @@ Deliverables:
     A GitHub repository containing:  
         - CDK stack code to deploy the required resources. (ie. Lambda, DynamoDB, Role, Permission, etc). 
         - A README with clear instructions on how to deploy and test the solution.  
-
+```
   
 # 1. Prerequisite
 [AWS CDK CLI Reference](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
