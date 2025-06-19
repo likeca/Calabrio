@@ -23,8 +23,8 @@ Bonus (Optional):
   
 Deliverables:  
     A GitHub repository containing:  
-        - CDK stack code to deploy the required resources. (ie. Lambda, DynamoDB, Role, Permission, etc). 
-        - A README with clear instructions on how to deploy and test the solution.  
+      - CDK stack code to deploy the required resources. (ie. Lambda, DynamoDB, Role, Permission, etc). 
+      - A README with clear instructions on how to deploy and test the solution.  
 ```
   
 # 1. Prerequisite
@@ -72,11 +72,11 @@ curl --location 'https://m4knk3i60f.execute-api.ca-central-1.amazonaws.com/messa
 }'
 ```
 
-# AWS CloudWatch Log
+# 4. AWS CloudWatch Log
 /aws/lambda/message-processing
 
 
-# Test
+# 5. Test - pytest
 ```bash
 export AWS_CDK_STACK_NAME="MessageProcessingStack"
 
